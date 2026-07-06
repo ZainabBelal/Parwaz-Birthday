@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+
+    background:black;
+
+    overflow-x:hidden;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* Hero */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    color:#FFD700;
+
+    font-family:'Playfair Display', serif;
+
+}
+
+.hero h2{
+
+    margin-top:20px;
+
+    font-size:36px;
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    width:60%;
+
+}
+
+button{
+
+    margin-top:40px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:#FFD700;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Stars */
+
+#stars{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+    opacity:.3;
+
+}
+/* Stars Container */
+
+#stars-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Individual Star */
+
+.star{
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+}
+
+/* Twinkle Animation */
+
+@keyframes twinkle{
+
+    from{
+        opacity:0.2;
+        transform:scale(1);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1.8);
+    }
+
+}
+.shooting-star{
+
+    position:absolute;
+
+    width:2px;
+
+    height:120px;
+
+    background:linear-gradient(white,transparent);
+
+    transform:rotate(45deg);
+
+}
+/* INTRO SCREEN */
+
+#intro{
+
+    background:black;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:1000;
+
+}
+
+#intro h1{
+
+    color:white;
+
+    font-size:60px;
+
+    text-align:center;
+
+}
+
+/* HERO */
+
+
+
+  #hero{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(
+        180deg,
+        #030712,
+        #08142d,
+        #02040a
+    );
+
+}
+.hero-content{
+
+    width:80%;
+    max-width:900px;
+
+}
+.hero-content h1{
+
+    font-size:90px;
+
+    color:#FFD700;
+
+    margin-bottom:10px;
+
+}
+
+.hero-content h2{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:24px;
+
+    margin-bottom:40px;
+
+}
+#startButton{
+
+    padding:18px 45px;
+
+    font-size:22px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#FFD700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+#startButton:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 25px gold;
+
+}
+/* Chapter One */
+/* ===========================================
+   MEMORY SECTION
+=========================================== */
+
+.memory{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.memory-bg{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    filter:brightness(.4);
+
+    transition:transform 1s;
+
+}
+
+.memory-overlay{
+
+    background:linear-gradient(
+
+        rgba(15,12,5,.20),
+
+        rgba(0,0,0,.55),
+
+        rgba(0,0,0,.75)
+
+    );
+
+}
+
+
+
+.memory-content{
+
+    position:absolute;
+
+    left:10%;
+
+    bottom:12%;
+
+    color:white;
+
+    width:600px;
+
+}
+
+.memory-number{
+
+    font-size:80px;
+
+    color:#FFD700;
+
+    opacity:.4;
+
+    font-weight:bold;
+
+}
+
+.memory-content h1{
+
+    font-size:58px;
+
+    margin:10px 0;
+
+}
+
+.memory-content p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+/* MEMORY SECTION */
+
+#gallery{
+
+    background:black;
+
+}
+
+.memory{
+
+    position:relative;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.memory img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    filter:brightness(.45);
+
+}
+
+.memory-text{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    color:white;
+
+    text-align:center;
+
+    width:70%;
+
+}
+
+.memory-text h1{
+
+    font-size:60px;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+.memory-text p{
+
+    font-size:24px;
+
+    line-height:1.7;
+
+}
+section{
+
+    width:100%;
+
+    height:100vh;
+
+}
+#stars{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:1;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+}
+.star{
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:50%;
+
+    animation:twinkle infinite ease-in-out;
+
+}
+@keyframes twinkle{
+
+    0%{
+
+        opacity:.2;
+
+        transform:scale(.8);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.5);
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+        transform:scale(.8);
+
+    }
+
+}
+.shooting-star{
+
+    position:absolute;
+
+    width:150px;
+
+    height:2px;
+
+    background:linear-gradient(to right, white, transparent);
+
+    transform:rotate(-45deg);
+
+    animation:shoot 2s linear forwards;
+
+}
+
+@keyframes shoot{
+
+    from{
+
+        transform:translate(0,0) rotate(-45deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translate(-600px,600px) rotate(-45deg);
+
+        opacity:0;
+
+    }
+
+}
+/* ===========================
+   TRANSITION SCREEN
+=========================== */
+
+#transition{
+
+    width:100%;
+    height:100vh;
+
+    background:black;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+#transition h1{
+
+    font-size:70px;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+#transition h2{
+
+    font-size:34px;
+
+    font-weight:300;
+
+    opacity:.85;
+
+}
+.scroll-indicator{
+
+    margin-top:60px;
+
+    font-size:34px;
+
+    animation:float 2s infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+.memory-date{
+
+    display:block;
+
+    margin:15px 0;
+
+    letter-spacing:4px;
+
+    color:#FFD700;
+
+    font-size:16px;
+
+    text-transform:uppercase;
+
+}
+#memory3 .memory-overlay{
+
+    background:linear-gradient(
+        rgba(40,20,10,.20),
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.75)
+    );
+
+}
+#memory3 h1{
+
+    color:#FFD27D;
+}
+#memory5 .memory-overlay{
+
+    background:linear-gradient(
+        rgba(10,15,35,.20),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.80)
+    );
+
+}
+
+#memory5 h1{
+
+    color:#FFE082;
+
+}
+/* ==========================
+   LETTER SECTION
+========================== */
+
+#letter{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #111,
+        #1d1d1d,
+        #111
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 20px;
+
+}
+
+.letter-container{
+
+    text-align:center;
+
+}
+
+.letter-container h1{
+
+    color:#FFD700;
+
+    font-size:50px;
+
+    margin-bottom:40px;
+
+}
+
+#openLetter{
+
+    padding:18px 45px;
+
+    font-size:22px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#FFD700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#openLetter:hover{
+
+    transform:scale(1.05);
+
+}
+
+#letterPaper{
+
+    display:none;
+
+    margin-top:50px;
+
+    background:#FFF9E8;
+
+    color:#333;
+
+    padding:50px;
+
+    max-width:900px;
+
+    border-radius:20px;
+
+    text-align:left;
+
+    line-height:2;
+
+    font-size:22px;
+
+    box-shadow:0 0 40px rgba(0,0,0,.4);
+
+}
+/* ==========================
+   FINALE
+========================== */
+
+#finale{
+
+    position:relative;
+
+    min-height:100vh;
+
+    background:linear-gradient(180deg,#050505,#111,#000);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.finale-content{
+
+    text-align:center;
+
+    color:white;
+
+    width:80%;
+
+    max-width:900px;
+
+    z-index:2;
+
+}
+
+.finale-content h1{
+
+    font-size:60px;
+
+    color:#FFD700;
+
+    margin-bottom:30px;
+
+}
+
+.finale-content p{
+
+    font-size:24px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.finale-content h2{
+
+    font-size:40px;
+
+    color:white;
+
+}
+
+.finale-content h3{
+
+    margin-top:40px;
+
+    color:#FFD700;
+
+    font-size:34px;
+
+}
+#finalButton{
+
+    display:none;
+
+    margin-top:40px;
+
+    padding:18px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:20px;
+
+    background:#FFD700;
+
+    cursor:pointer;
+
+}
