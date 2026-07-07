@@ -3,7 +3,7 @@
 const intro = document.getElementById("intro");
 const introText = document.getElementById("introText");
 
-const message = "From 'Can we have a call?' to here..... ";
+const message = "From 'Can we have a call?' to here.....see how far we have come.... ";
 
 let i = 0;
 
@@ -15,7 +15,7 @@ function typeWriter(){
 
         i++;
 
-        setTimeout(typeWriter,80);
+        setTimeout(typeWriter,65);
 
     }
 
@@ -113,17 +113,7 @@ gsap.from(".memory-text",{
     }
 
 });
-button.addEventListener("click",()=>{
 
-    music.play();
-
-    document.getElementById("chapter1").scrollIntoView({
-
-        behavior:"smooth"
-
-    });
-
-});
 
 const stars = document.getElementById("stars");
 
@@ -231,17 +221,31 @@ const typedLetter = document.getElementById("typedLetter");
 
 const letter = `Dear Parwaz,
 
-Happy Birthday to the man who makes my world brighter.
+If someone had asked me a year ago what love feels like, I don't think I would have known how to answer. Today, I do.
 
-Every memory on this little website reminds me how beautifully our story has unfolded. From the first time we met, to every smile, every conversation, every moment we've shared, you've become my safest place and my greatest blessing.
+It feels like finding peace in a person's presence. It feels like silence becoming comfortable, ordinary moments becoming unforgettable, and life becoming brighter without even realizing when it happened. Somewhere between our conversations and our laughter, you quietly became my favorite part of every day.
 
-Knowing that you'll soon be my husband fills my heart with gratitude and excitement. I can't wait to celebrate countless birthdays with you, create new memories, and build a lifetime together.
+There is something about you that I've always admired. You aren't someone who fills every silence with words or constantly expresses every feeling out loud, yet somehow I've never had to question your love. You have this quiet way of caring that speaks louder than anything words ever could. It's in the way you look after me, encourage me, remember the little things, and always want the best for me. Your actions have always whispered, "I'm here. I've got you," and I've learned that this is the purest kind of love.
 
-Thank you for being exactly who you are.
+Beneath your calm nature is the sweetest, most innocent heart—one that loves deeply without asking for recognition. One of the things I admire most about you is your ambition. The way you dream, work hard, and chase the future you envision inspires me every single day. But what makes me love you even more is that while you're building your own future, you've never stopped believing in mine. You celebrate my dreams as if they were your own, encourage me to become the best version of myself, and remind me that my success matters just as much as yours.
 
-I love you today, tomorrow, and always.
+Thank you for being the kind of man whose heart is far more beautiful than he will probably ever admit.
 
-Forever yours,
+I don't dream of a perfect life. I dream of a real one—with you. A home filled with laughter, late-night conversations, little arguments that end with smiles, spontaneous road trips, endless cups of chai, prayers side by side, birthdays celebrated together, and growing old while still looking at each other with the same warmth we do today.
+
+Sometimes I wonder if Allah created the perfect man just for me. And then I look at you, and my heart quietly answers... maybe He did.
+
+No matter where life takes us, I hope you always remember one simple truth:
+
+<b>You will always have me by your side. I will always believe in you, stand by you, and pray for you through every dream you chase and every challenge you face.</b>
+
+Happy Birthday, my Forever.
+
+May Allah bless you with a life filled with happiness, good health, barakah, and endless reasons to smile. May He strengthen your faith, grant you success in everything you strive for, and keep our hearts united with love and understanding. May He allow us to walk hand in hand through this life and in the Hereafter.
+
+All I got to say is- <b>"Tum jo aaye Zindagi me baat ban gayi...."</b>
+
+Forever and always,
 
 Zainab ❤️`;
 
@@ -259,7 +263,7 @@ openLetter.addEventListener("click", () => {
 
         if(index < letter.length){
 
-            typedLetter.innerHTML += letter.charAt(index);
+            typedLetter.innerHTML = letter.substring(0, index);
 
             index++;
 
