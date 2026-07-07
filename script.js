@@ -221,7 +221,7 @@ const typedLetter = document.getElementById("typedLetter");
 
 const letter = `Dear Parwaz,
 
-If someone had asked me a year ago what love feels like, I don't think I would have known how to answer. Today, I do.
+If someone had asked me six months ago what love feels like, I don't think I would have known how to answer. Today, I do.
 
 It feels like finding peace in a person's presence. It feels like silence becoming comfortable, ordinary moments becoming unforgettable, and life becoming brighter without even realizing when it happened. Somewhere between our conversations and our laughter, you quietly became my favorite part of every day.
 
