@@ -457,11 +457,8 @@ html{
 
 }
 section{
-
     width:100%;
-
-    height:100vh;
-
+    min-height:100vh;
 }
 #stars{
 
@@ -692,7 +689,7 @@ section{
 
     justify-content:center;
 
-    align-items:center;
+   
 
     padding:80px 20px;
 
@@ -742,13 +739,15 @@ section{
 
     display:none;
 
-    margin-top:50px;
+    margin:50px auto;
 
     background:#FFF9E8;
 
     color:#333;
 
     padding:50px;
+
+    width:90%;
 
     max-width:900px;
 
@@ -854,4 +853,150 @@ section{
 
     cursor:pointer;
 
+}
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    #intro h1{
+        font-size:32px;
+        padding:20px;
+    }
+ 
+    .hero-content{
+        width:90%;
+    }
+
+    .hero-content h1{
+        font-size:48px;
+        line-height:1.1;
+    }
+
+    .hero-content h2{
+        font-size:30px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    #startButton{
+        width:100%;
+        max-width:320px;
+        font-size:18px;
+        padding:16px;
+    }
+
+    .memory-content{
+
+        left:5%;
+        right:5%;
+        width:auto;
+        bottom:10%;
+
+    }
+
+    .memory-number{
+
+        font-size:48px;
+
+    }
+
+    .memory-content h1{
+
+        font-size:30px;
+
+    }
+
+    .memory-content p{
+
+        font-size:17px;
+        line-height:1.6;
+
+    }
+
+    .memory-date{
+
+        font-size:14px;
+
+    }
+
+    .letter-container h1{
+
+        font-size:32px;
+
+    }
+
+    #letterPaper{
+
+        padding:25px;
+        font-size:18px;
+        line-height:1.8;
+
+    }
+
+    .finale-content{
+
+        width:90%;
+
+    }
+
+    .finale-content h1{
+
+        font-size:36px;
+
+    }
+
+    .finale-content h2{
+
+        font-size:26px;
+
+    }
+
+    .finale-content h3{
+
+        font-size:24px;
+
+    }
+
+    .finale-content p{
+
+        font-size:18px;
+
+    }
+
+}
+
+#memory1 .memory-bg{
+    object-position:center 25%;
+}
+
+#memory2 .memory-bg{
+    object-position:center center;
+}
+
+#memory3 .memory-bg{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: middle;
+}
+
+#memory4 .memory-bg{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: top;
+}
+
+#memory5 .memory-bg{
+    object-position:center 35%;
+}
+#typedLetter{
+    white-space: pre-line;
+    font-size:20px;
+    line-height:2;
+    text-align:justify;
 }
